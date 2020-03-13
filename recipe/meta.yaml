@@ -1,5 +1,5 @@
 {% set name = "teensytoany" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 208e58a5c0ee695e9325a0c1b8ec0b2bbf862eed10ed0ddfad4fdd5853f459f8
+  sha256: 75388752d68a779477ea1dfad92b6698bbc1df9839759a73409472af3bce2876
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Pythonic way to control the TeensyToAny debugging board'
+  summary: A Pythonic way to control the TeensyToAny debugging board
 
 extra:
   recipe-maintainers:
