@@ -5,11 +5,9 @@ Home: https://github.com/ramonaoptics/python-teensytoany/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/teensytoany-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Pythonic way to control the TeensyToAny debugging board
-
-
 
 Current build status
 ====================
