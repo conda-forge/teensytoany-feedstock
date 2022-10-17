@@ -1,5 +1,5 @@
 {% set name = "teensytoany" %}
-{% set version = "0.0.26" %}
+{% set version = "0.0.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 769179c06d26be959e284fdd3af30f4e6a08bb50e7d215ee9b1d590ee9527b55
+  sha256: e78a0a00f5a40e7e12a035dd6ca9a82174a3792f8bcee30e5944b7207e12ed4c
 
 build:
   number: 0
@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.7,<4
     - pip
   run:
-    - python >=3
+    - python >=3.7,<4
     - pyserial
+    - packaging
 
 test:
   imports:
