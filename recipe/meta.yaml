@@ -19,7 +19,7 @@ requirements:
     - python >=3.7,<4
     - pip
   run:
-    - python >=3.7<4
+    - python >=3.7,<4
     - pyserial
     - packaging
 
