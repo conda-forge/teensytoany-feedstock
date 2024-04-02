@@ -1,13 +1,12 @@
-{% set name = "teensytoany" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: teensytoany
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b0dfacde25b38d734e128050cfbe1190c4f2773d6804f86fe45bae57da8227df
+  url: https://pypi.io/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
+  sha256: 465a21cf3920dfd018b43c2afeb659234e518be382ac21d89ef7c782151982d8
 
 build:
   number: 0
@@ -16,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4
+    - python >=3.9,<4
     - pip
   run:
-    - python >=3.8,<4
+    - python >=3.9,<4
     - pyserial
     - packaging
 
