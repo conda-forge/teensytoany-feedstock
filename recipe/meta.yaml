@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
   sha256: 066589b3c2a1ebc83f3babe9d9175533e02a0654c5318fcec6cfda55c549ab4f
 
 build:
