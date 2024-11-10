@@ -15,10 +15,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<4
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.9,<4
+    - python >={{ python_min }}
     - pyserial
     - packaging
 
