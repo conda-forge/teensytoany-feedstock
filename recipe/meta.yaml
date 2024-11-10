@@ -24,6 +24,8 @@ requirements:
     - packaging
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - teensytoany
 
