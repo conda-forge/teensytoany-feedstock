@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: teensytoany
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
-  sha256: 94a9d2525cb831df32eabd56fafcc8c3059a17a3567f55d6ccb6a72c26f35371
+  sha256: fe0ae63e75aebd708b58fb0246c8b60b973cd9cebaa5613711a9ac260f4b61b9
 
 build:
   number: 0
