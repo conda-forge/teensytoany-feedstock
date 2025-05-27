@@ -30,6 +30,8 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    # click needed to command line utilities but not needed for library
+    - click
   imports:
     - teensytoany
   commands:
