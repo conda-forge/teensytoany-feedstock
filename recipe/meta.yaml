@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: teensytoany
@@ -6,12 +6,15 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
-  sha256: fe0ae63e75aebd708b58fb0246c8b60b973cd9cebaa5613711a9ac260f4b61b9
+  sha256: 3db3a61c2a0ead59919a1bb84de3f25928c6cb6ee7684c10e316890c39e76b6f
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - teensytoany_programmer = teensytoany.programmer:teensytoany_programmer
+    - teensytoany_i2c_scan = teensytoany.i2c_scan:main
 
 requirements:
   host:
@@ -26,8 +29,15 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
+    # click needed to command line utilities but not needed for library
+    - click
   imports:
     - teensytoany
+  commands:
+    - pip check
+    - teensytoany_programmer --help
+    - teensytoany_i2c_scan --help
 
 about:
   home: https://github.com/ramonaoptics/python-teensytoany/
