@@ -39,6 +39,7 @@ test:
     - pip check
     - teensytoany_programmer --help
     - teensytoany_i2c_scan --help
+    - teensytoany_list --help
 
 about:
   home: https://github.com/ramonaoptics/python-teensytoany/
