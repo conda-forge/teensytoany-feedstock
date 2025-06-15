@@ -15,6 +15,7 @@ build:
   entry_points:
     - teensytoany_programmer = teensytoany.programmer:teensytoany_programmer
     - teensytoany_i2c_scan = teensytoany.i2c_scan:main
+    - teensytoany_list = teensytoany.list:main
 
 requirements:
   host:
