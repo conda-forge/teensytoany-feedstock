@@ -1,4 +1,4 @@
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: teensytoany
@@ -6,14 +6,15 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/teensytoany/teensytoany-{{ version }}.tar.gz
-  sha256: 793e7e313ffef33c1d6a4a553f24e57b31b899656b03d916052ac7fe999087c1
+  sha256: ebf396be4edb5d38c535419a08870883c5db65e8238f20f0d164444dda3b4eeb
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - teensytoany_programmer = teensytoany.programmer:teensytoany_programmer
+    - teensytoany = teensytoany.cli:teensytoany_cli
+    - teensytoany_programmer = teensytoany.programmer:main
     - teensytoany_i2c_scan = teensytoany.i2c_scan:main
     - teensytoany_list = teensytoany.list:main
 
